@@ -1,0 +1,225 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boba Tea World</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    header, main, footer {
+      margin-bottom: 40px;
+    }
+    header {
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: underline;
+      color: #000;
+    }
+    nav a:hover {
+      color: #6323a8;
+    }
+    hr {
+      border: none;
+      border-top: 2px dashed #c00cba;
+      margin: 30px 0;
+    }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-style: italic;
+      margin-top: 8px;
+      color: #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #777;
+      padding: 8px;
+    }
+    th {
+      background-color: #21a6df;
+      color: white;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #21a6df;
+      color: #fff;
+      padding: 12px 20px;
+      margin-top: 15px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer li {
+      display: inline;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with nav links -->
+  <header>
+    <h1>🧋 Welcome to Boba Tea World</h1>
+    <nav>
+      <a href="#mainContent">Home</a>
+      <a href="#mainContent">Flavors</a>
+      <a href="#contactForm">Contact Us</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Section 1: Introduction -->
+    <section class="intro">
+      <h2>Discover Our Boba Experience</h2>
+      <p>From classic milk teas to fruity infusions, our bubble tea creations are crafted to delight your taste buds and brighten your day.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Video -->
+    <section class="video-section">
+      <h2>See Our Tea in Action</h2>
+      <figure>
+        <!-- Embedded YouTube video -->
+        <iframe width="640" height="360"
+          src="https://www.youtube.com/embed/E_KKogWlndw"
+          title="Perfect Boba Tea Completely from Scratch"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <figcaption>Watch how delicious boba tea is crafted from start to finish.</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Image with caption -->
+    <section class="image-section">
+      <h2>Featured Flavor of the Month</h2>
+      <figure>
+        <img src="https://www.pikpng.com/pngl/m/61-616885_boba-tea-png-with-transparent-background-frozen-carbonated.png"
+             alt="A refreshing cup of bubble tea with boba pearls" width="450">
+        <figcaption>Try our refreshing taro pearl milk tea, creamy and cool.</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- Section 4: Table of Flavors -->
+    <section class="table-section">
+      <h2>Our Menu & Prices</h2>
+      <table>
+        <caption>Bubble Tea Flavors & Sizes</caption>
+        <thead>
+          <tr>
+            <th scope="col">Flavor</th>
+            <th scope="col">Size</th>
+            <th scope="col">Price (NGN)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Brown Sugar</th>
+            <td>Regular</td>
+            <td>#650</td>
+          </tr>
+          <tr>
+            <th scope="row">Matcha</th>
+            <td>Large</td>
+            <td>#400</td>
+          </tr>
+          <tr>
+            <th scope="row">Taro</th>
+            <td>Regular</td>
+            <td>#500</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Section 5: Contact Form -->
+    <section id="contactForm" class="form-section">
+      <h2>Contact Us</h2>
+      <p>Have questions or special requests? Fill out the form below and we’ll get back to you ASAP!</p>
+
+      <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName"
+               minlength="10" maxlength="20" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName"
+               minlength="10" maxlength="20" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" maxlength="11" required>
+
+        <label for="city">Your City</label>
+        <select id="city" name="city" required>
+          <option value="" disabled selected>Select your city</option>
+          <option>Ikoyi</option>
+          <option>Victoria Island</option>
+          <option>Lekki</option>
+          <option>Surulere</option>
+          <option>Yaba</option>
+          <option>Ajah</option>
+          <option>Mushin</option>
+          <option>Festac</option>
+          <option>Maryland</option>
+          <option>Apapa</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" maxlength="100" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer with link list -->
+  <footer>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Flavors</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p>&copy; 2025 Boba Tea World — All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
